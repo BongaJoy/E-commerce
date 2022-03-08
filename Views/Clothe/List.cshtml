@@ -1,0 +1,11 @@
+﻿@model ClotheListViewModel
+
+<h1>@Model.CurrentCategory</h1> 
+@foreach (var clothe in Model.clothes)
+{
+    <partial name="_ClotheCard" model="clothe" />
+}
+
+
+
+
